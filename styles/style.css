@@ -237,3 +237,105 @@ footer p {
         height: 45vh;
     }
 }
+
+/* Natural Wonders Page */
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem 6rem;
+    border-top: 1px solid #ddd;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 0;
+}
+
+.location-grid img {
+    height: 20vw;
+    border-radius: 8px;
+    justify-self: right;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+.location-text h2 {
+    font-size: 1.8rem;
+}
+
+.location-text .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1vw;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line img {
+    width: 2vw;
+    height: auto;
+}
+
+.line p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .location-grid img {
+        height: 20vw;
+    }
+    .location-text h2 {
+        font-size: 1.3rem;
+    }
+    .location-text .subtitle {
+        font-size: 1.0rem;
+    }
+    .line img {
+        width: 4vw;
+        height: auto;
+    }
+    .line p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .location-grid img {
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        margin-bottom: 0.5rem;
+    }
+    .location-text {
+        margin: 0;
+    }
+    .line {
+        align-self: center;
+        justify-self: left;
+    }
+    .line img {
+        width: 7vw;
+    }
+    .line p {
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+    }
+}
